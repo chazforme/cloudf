@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>혜부공 — 부동산 공부</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app">
+
+<!-- Sidebar -->
+<nav class="sidebar">
+  <div class="logo">
+    <div class="logo-title">혜부공</div>
+    <div class="logo-sub">부동산 공부 · 2026</div>
+  </div>
+  <div class="nav-label">메뉴</div>
+  <div class="nav-item active" onclick="showPage('home')" id="nav-home">
+    <span class="nav-icon">&#x1F3E0;</span><span>홈 & 진도</span>
+  </div>
+  <div class="nav-item" onclick="showPage('curriculum')" id="nav-curriculum">
+    <span class="nav-icon">&#x1F4C5;</span><span>커리큘럼</span>
+  </div>
+  <div class="nav-item" onclick="showPage('study')" id="nav-study">
+    <span class="nav-icon">&#x1F4D6;</span><span>오늘 학습</span>
+  </div>
+  <div class="nav-item" onclick="showPage('quiz')" id="nav-quiz">
+    <span class="nav-icon">&#x270F;&#xFE0F;</span><span>퀴즈</span>
+  </div>
+  <div class="nav-item" onclick="showPage('notes')" id="nav-notes">
+    <span class="nav-icon">&#x1F4DD;</span><span>오답노트</span>
+  </div>
+  <div class="nav-item" onclick="showPage('summary')" id="nav-summary">
+    <span class="nav-icon">&#x1F4DA;</span><span>요약노트</span>
+  </div>
+</nav>
+
+<!-- Main -->
+<main class="main">
+
+<!-- HOME -->
+<div class="page active" id="page-home">
+  <div class="page-header">
+    <div class="page-title">혜부공에 오신 걸 환영합니다</div>
+    <div class="page-sub" id="today-info">오늘의 학습을 시작해보세요</div>
+  </div>
+
+  <div class="progress-grid">
+    <div class="stat-card">
+      <div class="stat-num" id="stat-days">0</div>
+      <div class="stat-label">완료한 날</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="stat-quiz">0%</div>
+      <div class="stat-label">평균 퀴즈 점수</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="stat-wrong">0</div>
+      <div class="stat-label">오답 누적</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">18일 학습 지도</div>
+    <div class="day-grid" id="home-day-grid"></div>
+    <div style="display:flex; gap:16px; margin-top:12px; font-size:11px; color:var(--text3);">
+      <span>&#x2B1C; 미학습</span>
+      <span style="color:var(--accent)">&#x25A3; 오늘</span>
+      <span style="color:var(--green)">&#x2713; 완료</span>
+    </div>
+  </div>
+
+  <div class="card" id="today-card">
+    <div class="card-title">오늘 할 일</div>
+    <div id="today-content"></div>
+  </div>
+</div>
+
+<!-- CURRICULUM -->
+<div class="page" id="page-curriculum">
+  <div class="page-header">
+    <div class="page-title">커리큘럼</div>
+    <div class="page-sub">18일 · 하루 15~20분</div>
+  </div>
+  <div id="curriculum-list"></div>
+</div>
+
+<!-- STUDY -->
+<div class="page" id="page-study">
+  <div id="study-area"></div>
+</div>
+
+<!-- QUIZ -->
+<div class="page" id="page-quiz">
+  <div id="quiz-area"></div>
+</div>
+
+<!-- WRONG NOTES -->
+<div class="page" id="page-notes">
+  <div class="page-header">
+    <div class="page-title">오답노트</div>
+    <div class="page-sub">틀린 문제만 모아서 복습해요</div>
+  </div>
+  <div id="notes-list"></div>
+</div>
+
+<!-- SUMMARY -->
+<div class="page" id="page-summary">
+  <div class="page-header">
+    <div class="page-title">요약노트</div>
+    <div class="page-sub">학습 완료 날짜별 핵심 개념 정리</div>
+  </div>
+  <div id="summary-list"></div>
+</div>
+
+</main>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

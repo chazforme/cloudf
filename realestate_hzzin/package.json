@@ -1,0 +1,13 @@
+{
+  "name": "hyebugong",
+  "version": "1.0.0",
+  "description": "혜부공 - 부동산 공부용 개인 웹사이트",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
