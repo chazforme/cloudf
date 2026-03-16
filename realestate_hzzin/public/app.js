@@ -1,5 +1,5 @@
 // ════════════════════════════════════════
-// 혜부공 — 부동산 공부 앱
+// 이부진 — 이걸로 부동산 공부하는 혜진
 // ════════════════════════════════════════
 
 // ── CURRICULUM DATA ──
@@ -729,7 +729,7 @@ const REVIEW_TOPICS = {
 // ════════════════════════════════════════
 // STATE (localStorage)
 // ════════════════════════════════════════
-const STATE_KEY = 'hyebugong_state_v1';
+const STATE_KEY = 'ibujin_state_v1';
 
 function loadState() {
   try {

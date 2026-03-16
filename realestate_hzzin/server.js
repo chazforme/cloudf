@@ -11,5 +11,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`혜부공 로컬 서버: http://localhost:${PORT}`);
+  console.log(`이부진 로컬 서버: http://localhost:${PORT}`);
 });

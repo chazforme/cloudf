@@ -1,7 +1,7 @@
 {
   "name": "hyebugong",
   "version": "1.0.0",
-  "description": "혜부공 - 부동산 공부용 개인 웹사이트",
+  "description": "이부진 - 이걸로 부동산 공부하는 혜진",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
